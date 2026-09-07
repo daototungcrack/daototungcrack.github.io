@@ -22,19 +22,45 @@
       <div class="card">
         <div class="card-header" id="headingsix">
           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapsefire" aria-expanded="true"
-              aria-controls="collapsefire">
-              Copy text
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapsechrome" aria-expanded="true"
+              aria-controls="collapsechrome">
+              install chrome CMD
             </button>
           </h5>
         </div>
 
-        <div id="collapsefire" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+        <div id="collapsechrome" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+          <div class="card-body">
+            <div class="copy-box p-3 bg-light border rounded">
+              <span id="textToCopy"><code>$Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "http://dl.google.com/chrome/install/375.126/chrome_installer.exe" -OutFile $Path\$Installer; Start-Process -FilePath $Path\$Installer -Args "/silent /install" -Verb RunAs -Wait; Remove-Item $Path\$Installer</code></span>
+              <span class="copy-icon" onclick="copyText()">
+                <img style="width: 22px" src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/copied-icon.svg"
+                  alt="Copied Icon">
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingsix">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapsefiree" aria-expanded="true"
+              aria-controls="collapsefiree">
+              đây là text
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapsefiree" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
           <div class="card-body">
             <div class="copy-box p-3 bg-light border rounded">
               <span id="textToCopy"><code>iex ((New-Object
                         Net.WebClient).DownloadString('https://get.activated.win'))</code></span>
-              <span class="copy-icon" onclick="copyText()">Copy text 📋
+              <span class="copy-icon" onclick="copyText()">
+                <img style="width: 22px" src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/copied-icon.svg"
+                  alt="Copied Icon">
+
               </span>
             </div>
           </div>
